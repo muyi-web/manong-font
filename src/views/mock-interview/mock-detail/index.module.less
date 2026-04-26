@@ -1,0 +1,50 @@
+.wrapper{
+  background-color: white;
+  border: 1px solid lightgrey;
+  padding-bottom: 20px;
+  .title{
+    padding: 20px 20px 0;
+  }
+  .orderBox{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    .orderItem{
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      background-color: lightgray;
+      border-radius: 10px;
+      cursor: pointer;
+      &.active{
+        background-color: rgba(0, 0, 255, 0.6);
+        color: white;
+      }
+    }
+  }
+  .questionBox{
+    padding: 20px 20px 0;
+    .questionTitle{
+      margin-bottom: 10px;
+    }
+  }
+  .tagBox{
+    padding: 20px;
+    .tagTitle{
+      margin-bottom: 10px;
+    }
+  }
+  .userAnswerBox{
+    padding: 20px 20px 0;
+    .questionContent{
+      margin-top: 10px;
+      padding: 10px;
+      background: rgba(211, 211, 211, 0.4);
+      border-radius: 10px;
+      line-height: 30px;
+    }
+  }
+}

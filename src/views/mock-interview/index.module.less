@@ -1,0 +1,66 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  .leftBox{
+    flex: 1 0 auto;
+    height: calc(100vh - 120px);
+    position: relative;
+    max-width: 590px;
+    background-color: white;
+    .pdfBox{
+      overflow-y: scroll;
+      height: 100%;
+    }
+    .floatBtn{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 100;
+    }
+  }
+  .rightBox{
+    flex: 1 0 auto;
+    max-width: 590px;
+    // background-color: white;
+    height: calc(100vh - 120px);
+    .questionWrapper{
+      margin-top: 10px;
+      padding: 20px 10px;
+      .questionTitle{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .title{
+          font-weight: bold;
+          font-size: 16px;
+          margin-right: 20px;
+        }
+      }
+      .label{
+        margin-bottom: 10px;
+      }
+      .answerContent{
+        .bottomAction{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          .rateBox{
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .submit{
+      text-align: right;
+      margin-top: 20px;
+    }
+  }
+}
