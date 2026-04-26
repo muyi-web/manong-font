@@ -133,49 +133,6 @@ const Header = () => {
           <TopMenu />
         </div>
         <div className='head-navigator-user-box'>
-          <Dropdown
-            placement='bottom'
-            destroyPopupOnHide
-            dropdownRender={() => {
-              return (
-                <div className='drop-down-box'>
-                  <Space size='large'>
-                    {discoverItems.map(item => {
-                      return (
-                        <div className='drop-down-item' key={item.key} onClick={() => goPath(item)}>
-                          {item.key === 'wechat' ? (
-                            <>
-                              <Popover
-                                zIndex={2000}
-                                placement='bottom'
-                                content={() => {
-                                  return (
-                                    <div>
-                                      <img src={LoginQrcode} />
-                                    </div>
-                                  )
-                                }}
-                              >
-                                <div className='drop-down-item-title'>{item.title}</div>
-                                <div className='drop-down-item-content'>{item.subTitle}</div>
-                              </Popover>
-                            </>
-                          ) : (
-                            <>
-                              <div className='drop-down-item-title'>{item.title}</div>
-                              <div className='drop-down-item-content'>{item.subTitle}</div>
-                            </>
-                          )}
-                        </div>
-                      )
-                    })}
-                  </Space>
-                </div>
-              )
-            }}
-          >
-            <Button type='link'>升职加薪必看</Button>
-          </Dropdown>
           {'/question-bank' == pathname && (
             <div className='head-navigator-input-box'>
               <Search

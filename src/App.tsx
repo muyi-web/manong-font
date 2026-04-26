@@ -66,11 +66,6 @@ const App = () => {
           <Outlet />
         </Suspense>
       </div>
-      <div className='copyright'>
-        <a href='http://beian.miit.gov.cn/' target='_blank'>
-          京ICP备2023035579号
-        </a>
-      </div>
     </div>
   )
 }
